@@ -1,0 +1,115 @@
+version: '2.0'
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- nlu_fallback
+- greet
+- goodbye
+- affirm
+- deny
+- mood_great
+- bot_challenge
+- access_application
+- application_fee
+- fee_reimbursed
+- exam
+- ranking
+- locality
+- tourist
+- application_status
+- application_acceptance
+- find_place
+- stay
+- cost
+- transport_mode
+- transport_use
+- student_card
+- internet
+- lunch
+- ssn
+- housing
+- study
+- courses
+- bank
+- credit_card
+- account
+- events
+- hang_out
+- corona_testing
+- available_jobs
+- get_jobs
+responses:
+  utter_greet:
+  - text: Hey! Welcome to the website of University of South Punjab, Pakistan. How can I help you?
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_no_more:
+  - text: Sorry, that's all I have!
+  utter_iamabot:
+  - text: I am a bot, working for University of South Punjab, Pakistan.
+  utter_access_application:
+  - text: 'Please refer: https://ucp.edu.pk/how-to-apply/'
+  utter_application_fee:
+  - text: Contact to administration Common Application Fee without waiver)
+  utter_fee_reimbursed:
+  - text: 'Please refer: https://ucp.edu.pk/rules-regulations/'
+  utter_exam:
+  - text: We do not require scores from the GRE or MAT for the  degree. If you have current scores and would like to submit them with the application, we will review them with the other application materials.
+  utter_ranking:
+  - text: University of Central Punjab's UCP Business School is ranked 9th in Lahore for its quality education.
+  utter_locality:
+  - text: Khayaban-e-Jinnah Road, Johar Town, Lahore.
+  utter_tourist:
+  - text: 'Please refer: https://ucp.edu.pk/'
+  utter_application_status:
+  - text: Please contact your study consultant.
+  utter_application_acceptance:
+  - text: You will be communicated from our end via email.
+  utter_find_place:
+  - text: The campus housing is mainly for freshmen students. Most of univeristy's students and visitors use off-campus housing. Many find www.olx.com useful for finding an appartment or a room.
+  utter_stay:
+  - text: 'Please visit: https://ucp.edu.pk/facilities/girls-hostel/'
+  utter_cost:
+  - text: Typical student apartment price in Pakistan range from 10000-30000 PKR. A room can be found at 10000-30000 PKR.
+  utter_transport_mode:
+  - text: University Bus facility / Walking based on location data / Cab Services
+  utter_transport_use:
+  - text: There is a public bus service . The university has also a bus line connecting housing places to the campus.
+  utter_student_card:
+  - text: 'Please contact to your respective HOD'
+  utter_internet:
+  - text: If you have UCP account, use your home university username and password.
+  utter_lunch:
+  - text: "There's a number of lunch places within and around the campus."
+  utter_ssn:
+  - text: Please call SSO-Social Security Office . You need to set up an appointment and go to their office at 1835 Assembly st. You need your id (passport, visa) and documents proving your studies here.
+  utter_housing:
+  - text: See Info at https://ucp.edu.pk/
+  utter_study:
+  - text: Please go to https://ucp.edu.pk/
+  utter_courses:
+  - text: Please contact your course professor or teaching assistant. You may also find a mentor at Ucp.
+  utter_bank:
+  - text: There are many major banks in Pakistan, eg - Bank of Punjab, UBL. If you open a savings account you get a debit card and 0 monthly fee if the account has always a minimum of 500 PKR balance.
+  utter_credit_card:
+  - text: A student credit card helps you build a good credit score before graduating. This way, you can avail credit at competitive terms in the future, provided you manage your credit card well. This type of credit card offers various perks like cashback and discounts that can help you save a lot of money.
+  utter_account:
+  - text: A checking account is a bank account you can write checks from, or access several other ways, which tends to make it your go-to, daily transaction bank account. A savings account is where you stash funds that you aren't ready to use yet, often with the goal of accumulating more.
+  utter_events:
+  - text: 'See upcoming events here: https://ucp.edu.pk/events/'
+  utter_hang_out:
+  - text: Start by visiting UCP cafeteria.
+  utter_corona_testing:
+  - text: Please visit https://ucp.edu.pk/announcement/coronavirus-advisory/
+  utter_available_jobs:
+  - text: Information can be found at https://ucp.edu.pk/uncategorized/career-opportunities/
+  utter_get_jobs:
+  - text: 'Career center is the best place to explore different on-campus careers. For more information, follow this link: https://ucp.edu.pk/uncategorized/career-opportunities/'
+actions:
+- utter_did_that_help
+- utter_hang_out
